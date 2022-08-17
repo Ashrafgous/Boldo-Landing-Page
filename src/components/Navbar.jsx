@@ -37,9 +37,14 @@ const Lists = styled.div`
   padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 835px){
+    display: flex;
+    justify-content: center;
+  }
 `;
 const Logo = styled.div`
   margin-left: 6rem;
+  
 `;
 const NavLink = styled.div`
   margin-right: 5rem;
@@ -67,6 +72,9 @@ const Links = styled.ul`
       text-decoration: none;
     }
   }
+  @media (max-width: 1330px){
+    display: none;
+  }
 `;
 const Login = styled.div`
   margin: 0 2rem;
@@ -81,7 +89,6 @@ const Login = styled.div`
   padding: 8px 40px;
   gap: 8px;
 
-
   a {
     text-decoration: none;
     font-family: "Open Sans";
@@ -93,11 +100,14 @@ const Login = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     /* Dark Blue */
 
     color: #0a2640;
+  }
+
+  @media (max-width: 835px){
+    display: none;
   }
 `;
 
