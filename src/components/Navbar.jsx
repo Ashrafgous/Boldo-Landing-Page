@@ -36,6 +36,7 @@ const Navbar = () => {
 
 const Nav = styled.nav`
   background-color: #0a2640;
+  width: 100%;
   position: relative;
   z-index: 1;
 `;
