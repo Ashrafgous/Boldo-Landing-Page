@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import BoldoLogo from "../Images/Logo.png";
+import Circle from '../Images/Ellipse 9.png'
 
 const Navbar = () => {
   return (
     <Nav>
+      <Ellipse>
+        <img src={Circle} alt="" />
+      </Ellipse>
       <Lists>
         <Logo>
           <img src={BoldoLogo} alt="Logo" />
@@ -32,19 +36,34 @@ const Navbar = () => {
 
 const Nav = styled.nav`
   background-color: #0a2640;
+  position: relative;
+  z-index: 1;
+`;
+const Ellipse = styled.div`
+ position: absolute;
+ top: 0;
+ right: 0;
+ z-index: -1;
+ @media (max-width: 1330px) {
+    display: none;
+  }
+
+img{
+    width: 850px;
+    height: 600px;
+}
 `;
 const Lists = styled.div`
   padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 835px){
+  @media (max-width: 835px) {
     display: flex;
     justify-content: center;
   }
 `;
 const Logo = styled.div`
   margin-left: 6rem;
-  
 `;
 const NavLink = styled.div`
   margin-right: 5rem;
@@ -72,7 +91,7 @@ const Links = styled.ul`
       text-decoration: none;
     }
   }
-  @media (max-width: 1330px){
+  @media (max-width: 1330px) {
     display: none;
   }
 `;
@@ -106,7 +125,7 @@ const Login = styled.div`
     color: #0a2640;
   }
 
-  @media (max-width: 835px){
+  @media (max-width: 835px) {
     display: none;
   }
 `;
