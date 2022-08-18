@@ -6,35 +6,37 @@ import Langing2 from "../Images/landin-Image-3.png";
 
 const Landing = () => {
   return (
-    <Land>
-      <LandingLeft>
-        <HeroHead>
-          <h2>Save time by building fast with Boldo Template</h2>
-        </HeroHead>
-        <HeroPara>
-          <p>
-            Funding handshake buyer business-to-business metrics iPad
-            partnership. First mover advantage innovator success deployment
-            non-disclosure.
-          </p>
-        </HeroPara>
-        <HeroButton>
-          <a href="/">Buy Template</a>
-          <a href="/">Explore</a>
-        </HeroButton>
-      </LandingLeft>
-      <LandingRight>
-        <ImageOne>
-          <img src={Langing1} alt="" />
-        </ImageOne>
-        <ImageTwo>
-          <img src={Langing2} alt="" />
-        </ImageTwo>
-        <ImageThree>
-          <img src={Langing3} alt="" />
-        </ImageThree>
-      </LandingRight>
-    </Land>
+    <>
+      <Land>
+        <LandingLeft>
+          <HeroHead>
+            <h2>Save time by building fast with Boldo Template</h2>
+          </HeroHead>
+          <HeroPara>
+            <p>
+              Funding handshake buyer business-to-business metrics iPad
+              partnership. First mover advantage innovator success deployment
+              non-disclosure.
+            </p>
+          </HeroPara>
+          <HeroButton>
+            <a href="/">Buy Template</a>
+            <a href="/">Explore</a>
+          </HeroButton>
+        </LandingLeft>
+        <LandingRight>
+          <ImageOne>
+            <img src={Langing1} alt="" />
+          </ImageOne>
+          <ImageTwo>
+            <img src={Langing2} alt="" />
+          </ImageTwo>
+          <ImageThree>
+            <img src={Langing3} alt="" />
+          </ImageThree>
+        </LandingRight>
+      </Land>
+    </>
   );
 };
 
@@ -57,7 +59,6 @@ const LandingLeft = styled.div`
   height: 310px;
   margin-top: -6rem;
   margin-left: 7rem;
- 
 `;
 const HeroHead = styled.div`
   width: 850px;
@@ -83,8 +84,8 @@ const HeroPara = styled.div`
 `;
 
 const HeroButton = styled.div`
-display: flex;
-gap: 2rem;
+  display: flex;
+  gap: 2rem;
   a {
     text-decoration: none;
   }
@@ -94,7 +95,7 @@ gap: 2rem;
     justify-content: center;
     align-items: center;
     padding: 16px 56px;
-    color: #0A2640;
+    color: #0a2640;
     gap: 8px;
     width: 247px;
     height: 60px;

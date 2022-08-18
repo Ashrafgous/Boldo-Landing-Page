@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BoldoLogo from "../Images/Logo.png";
-import Circle from '../Images/Ellipse 9.png'
+import Circle from "../Images/Ellipse 9.png";
 
 const Navbar = () => {
   return (
@@ -41,18 +41,18 @@ const Nav = styled.nav`
   z-index: 1;
 `;
 const Ellipse = styled.div`
- position: absolute;
- top: 0;
- right: 0;
- z-index: -1;
- @media (max-width: 1670px) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  @media (max-width: 1670px) {
     display: none;
   }
 
-img{
+  img {
     width: 850px;
     height: 600px;
-}
+  }
 `;
 const Lists = styled.div`
   padding: 2rem 2rem;
