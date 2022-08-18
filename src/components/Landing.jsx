@@ -41,7 +41,7 @@ const Landing = () => {
 };
 
 const Land = styled.div`
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background-color: #0a2640;
   z-index: 12;
