@@ -19,8 +19,8 @@ const Landing = () => {
           </p>
         </HeroPara>
         <HeroButton>
-         <button>Buy Template</button>
-          <button>Explore</button>
+          <a href="/">Buy Template</a>
+          <a href="/">Explore</a>
         </HeroButton>
       </LandingLeft>
       <LandingRight>
@@ -55,53 +55,90 @@ const LandingLeft = styled.div`
   gap: 40px;
   width: 567px;
   height: 310px;
-  margin-top: -4rem;
+  margin-top: -6rem;
   margin-left: 7rem;
+ 
 `;
 const HeroHead = styled.div`
-width: 850px;
-height: 138px;
-font-family: 'Manrope';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 72px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
+  width: 850px;
+  height: 138px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 `;
 const HeroPara = styled.div`
-width: 567px;
-height: 56px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-color: #F1F1F1;`;
+  width: 567px;
+  height: 56px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #f1f1f1;
+`;
 
-const HeroButton = styled.div``;
+const HeroButton = styled.div`
+display: flex;
+gap: 2rem;
+  a {
+    text-decoration: none;
+  }
+  a:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 56px;
+    color: #0A2640;
+    gap: 8px;
+    width: 247px;
+    height: 60px;
+    background: #65e4a3;
+    border: 2px solid #69e6a6;
+    border-radius: 56px;
+  }
+  a:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 56px;
+    gap: 8px;
+    color: white;
+    width: 187px;
+    height: 60px;
+
+    border: 2px solid #ffffff;
+    border-radius: 56px;
+  }
+`;
 
 const LandingRight = styled.div`
   z-index: 15;
   position: relative;
   width: 493.86px;
-height: 423px;
-margin-top: -4rem;
+  height: 423px;
+  margin-top: -4rem;
   margin-right: 15rem;
+  @media (max-width: 1670px) {
+    display: none;
+  }
 `;
 const ImageOne = styled.div`
-margin-bottom: 1rem;
-
+  margin-bottom: 1rem;
 `;
 const ImageThree = styled.div`
-position: absolute;
-right: 0;
+  position: absolute;
+  right: 0;
 `;
 const ImageTwo = styled.div`
-position: absolute;
- left: 0;
-
+  position: absolute;
+  left: 0;
 `;
 
 export default Landing;

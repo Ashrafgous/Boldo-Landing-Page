@@ -45,7 +45,7 @@ const Ellipse = styled.div`
  top: 0;
  right: 0;
  z-index: -1;
- @media (max-width: 1330px) {
+ @media (max-width: 1670px) {
     display: none;
   }
 
